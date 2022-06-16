@@ -1,0 +1,31 @@
+
+*{
+  box-sizing: border-box;
+  padding: 0px;
+  margin: 0px;
+}
+
+li{
+  list-style-type: none;
+}
+
+
+a {
+  color: #00B7FF;
+  text-decoration: none;
+}
+
+.btn{
+  border-width: 0.1px;
+  border-style: solid;
+  border-color: turquoise;
+  width: 100px;
+  display: flex;
+  justify-content: center;
+  border-radius: 2px;
+  
+}
+
+
+
+/* FORM STYLES */

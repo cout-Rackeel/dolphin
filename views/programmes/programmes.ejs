@@ -1,0 +1,35 @@
+<div class="programme-grid">
+
+  <% data.forEach(item => { %>
+
+    <div class="programme-card">
+    
+      <div class="card-top">
+        <p class="programme_title"> <%= item.prog_nm%></p>
+      </div>
+    
+      <div class="card-middle">
+        
+          <p class="programme_description">
+            <%= item.prog_desc%>
+          </p>
+    
+      </div>
+      
+      <div class="card-bottom">
+        <p class="programme_cost"> Cost: <%= ( item.cost).toLocaleString('en-US', {style: 'currency',currency: 'USD',}) %> </p>
+        <a href="/bookings" class="btn">Book Now!</a>
+      </div>
+    
+      <div class="img-cont">
+        <img src="<%= item.prog_img %>" alt="">
+      </div>
+    
+      <div class="overlay"></div>
+    </div>
+  <% }) %>
+  
+  
+
+ </div>
+
