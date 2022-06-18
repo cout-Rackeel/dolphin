@@ -1,0 +1,40 @@
+
+<div class="img-display-cont form-center">
+    <div class="login-img"></div>
+
+  <div class="form-cont" style="height: 400px;">
+    <div class="form-header" style=" margin-bottom: 30px;">
+      <h3>Login Form</h3>
+    </div>
+  
+    <form action="/login/login" method="post">
+
+      <div class="form-control ">
+        <label for="email">Email</label>
+        <input type="email" name="email" id="email" value="<%= user_session.keeper %> ">
+      </div>
+  
+      <div class="form-control">
+        <label for="password">Password</label>
+        <input type="password" name="password" id="password">
+      </div>
+  
+      <div class="btn-cont">
+        <button class="btn" style="font-size: 18px; width: 150px; padding:5px 0px">Login</button>
+      </div>
+  
+    </form>
+    
+    </div>
+  </div>
+
+
+  <div class="message">
+    <% if (messages.error) { %>
+      <p style="color:red"><%- messages.error %></p>
+  <% } %>
+  
+  <% if (messages.success) { %>
+       <p style="color:green"><%- messages.success %></p>
+  <% } %>
+  </div>

@@ -13,7 +13,6 @@ router.get('/', function(req, res, next) {
       data: rows, 
       stylesheet: '/stylesheets/programmes.css',
       bootstrap : false
-
     }
 
     res.render('programmes/programmes', locals);

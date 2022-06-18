@@ -4,3 +4,14 @@
     <p>Welcome to <%= title %></p>
   </div>
 
+  <%= JSON.stringify(user_session) %> 
+
+  <div class="message">
+    <% if (messages.error) { %>
+      <p style="color:red"><%- messages.error %></p>
+  <% } %>
+  
+  <% if (messages.success) { %>
+       <p style="color:green"><%- messages.success %></p>
+  <% } %>
+  </div>

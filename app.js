@@ -15,6 +15,7 @@ var expressLayout = require('express-ejs-layouts');
 
 // Setting Routes
 var indexRouter = require('./routes/index');
+var loginRouter = require('./routes/login');
 var programmesRouter = require('./routes/programmes');
 var bookingsRouter = require('./routes/bookings');
 
@@ -43,12 +44,14 @@ app.use(session({
   saveUninitialized: true,
   cookie: {maxAge:120000}
 }))
+app.use(flash());
 
 
 app.use(express.static(path.join(__dirname, 'public')));
 
 // Route Middleware Setup
 app.use('/', indexRouter);
+app.use('/login', loginRouter);
 app.use('/programmes', programmesRouter);
 app.use('/bookings', bookingsRouter);
 

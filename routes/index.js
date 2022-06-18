@@ -5,6 +5,7 @@ var conn = require('../lib/db');
 
 router.get('/', function(req, res, next) {
   var progSQL = 'SELECT * FROM dolphin.programmes'
+  
   conn.query(progSQL , (err,rows) => {
     if (err) console.log(err);
 
@@ -12,8 +13,8 @@ router.get('/', function(req, res, next) {
       title: 'Dolphin Cove - Home Page',
       data: rows, 
       stylesheet: '',
-      bootstrap : false
-
+      bootstrap : false,
+      user_session : req.session
     }
 
     res.render('index', locals);

@@ -23,9 +23,96 @@ a {
   display: flex;
   justify-content: center;
   border-radius: 2px;
-  
+  background-color: white;
+  color: #00B7FF;
+  font-family: 'Source Sans 3' , sans-serif;
 }
 
 
 
 /* FORM STYLES */
+
+
+.img-display-cont{
+  display: flex;
+  width: 80%;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+}
+
+.login-img{
+  width: 50%;
+  height: 400px;
+  background-size: cover;
+  background-image: url('https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885__480.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.form-header{
+  font-family: 'Poppins' , sans-serif;
+  font-size: 20px;
+  font-weight: 100;
+  border-bottom: 0.1px solid lightgray;
+  padding: 10px;
+  color: #333;
+  letter-spacing: 2px;
+  background-image: linear-gradient(180deg,aliceblue,aliceblue,skyblue);
+}
+
+form > * {
+  margin: 15px 0px;
+}
+
+.form-center{
+  margin: 50px auto;
+}
+
+.form-cont{
+  width: min(100%,600px);
+  display: flex;
+  flex-direction: column;
+  padding: 30px;
+  border: 0.1px solid lightgray;
+}
+
+
+
+.form-group{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+  width: 100%;
+}
+
+.form-control{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin: 10px 0px;
+}
+
+.form-control input , .form-control label{
+  display: block;
+}
+
+.form-control label{
+  font-family: 'Poppins', sans-serif;
+  font-size: 18px;
+  font-weight: 100;
+  margin-bottom: 5px ;
+  color: teal ;
+}
+
+.form-control input{
+  font-family: Mukta, sans-serif;
+  border: 0.1px solid gray;
+  border-radius: 3px;
+  font-size: 18px;
+  padding: 0px 5px;
+}
+
+.btn-cont{
+  margin: 20px 0px 0px 0px;
+}
